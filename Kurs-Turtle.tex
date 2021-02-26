@@ -1,0 +1,174 @@
+\input{head}
+
+\title{CoderDojo Saar - Turtle}
+\date{05.03. - 06.03.2021}
+
+
+\begin{document}
+	\maketitle
+		
+	\begin{center}
+		{\large Ablaufplan}
+	\end{center}	
+	
+	\tableofcontents
+	
+	
+	\section{Erster Tag}
+	\subsection{Einführung ($10$ min)} 
+	\begin{itemize}
+		\item
+		Einführung, Begrüßung, was machen wir heute?
+		
+		\item 
+		\textbf{Repo klonen} über GitHub $\to$ Projekt über GitHub Link importieren.
+		
+		\item
+		\textbf{Einführung in Repl}:
+		\begin{itemize}
+			\item 
+			Links Dateien und Aufgaben, Mitte oben Run Knopf, rechts Ausgabe.
+			
+			\item
+			Wenn abstürzt, Tab neu laden, speichert automatisch.
+		\end{itemize}	
+	\end{itemize}
+
+
+	\subsection{Aufgabe 1 ($5+20=25$ min)}
+	\begin{enumerate}[(a)]
+		\item 
+		\begin{itemize}
+			\item 
+			Einführung Befehle: @left, right, forward, back@
+			\item
+			Zeichnen einfaches Quadrat zusammen.
+			\item
+			Zeichnen daneben ein Quadrat in die andere Richtung.
+			\item
+			Dann rückwärts den Pfad abgehen ohne eine neue Linie zu zeichnen.
+		\end{itemize}
+		
+		\item
+		\begin{itemize}
+			\item 
+			Zeichne das Haus des Nikolaus mit den gerade gelernten Befehlen.
+		\end{itemize}
+	\end{enumerate}
+
+
+	\subsection{Aufgabe 2 ($5+25=30$ min)}
+	\begin{enumerate}[(a)]
+		\item 
+		\begin{itemize}
+			\item 
+			Einführung Befehle: @penup, pendown, color@
+			\item
+			Gehen zusammen die Buchstaben ''MK`` durch.
+		\end{itemize}
+		
+		\item
+		\begin{itemize}
+			\item 
+			Zeichne die eigenen Initialen bunt.
+		\end{itemize}
+	\end{enumerate}
+		
+	
+	\subsection{Aufgabe 3 ($5+30 + 10=45$ min)}
+
+	\section{Zweiter Tag}
+	
+	\subsection{Einführung Rekursion ($15$ min)}
+	\begin{itemize}
+		\item
+		Neues Programmierprinzip: Rekursion.
+		\item
+		Beispiel: Aufsummieren der ersten $n$ Zahlen.
+		\item
+		Zuerst an @for@-Schleife zeigen.
+		\item
+		Dann dasselbe mit Rekursion.
+	\end{itemize}
+
+	\subsection{Aufgabe 4 ($10$ min)} 
+	\begin{itemize}
+		\item
+		Schreibe eine rekursive Funktion, die $a^b$ berechnet und teste sie anhand verschiedener Eingaben.
+		\item
+		Besprechen.
+	\end{itemize}
+
+	\subsection{Aufgabe 5 ($10 + 20 + 10 = 40$ min)}
+	\begin{itemize}
+		\item 
+		Kochkurve / Schneeflocke.
+		\item
+		\begin{enumerate}[(a)]
+			\item 
+			Schreibe eine Funktion, die eine einfache Kochkurve mit einer gegebenen Länge $l$ zeichnet.
+			\item
+			Schreibe eine Funktion, die das folgende Verhalten zeigt:
+			\begin{itemize}
+				\item 
+				Sie nimmt zwei Parameter entgegen: Die Länge $l$ und die sogenannte Rekursionstiefe $n$, das heißt, die Anzahl der Schritte.
+				\item
+				Wenn nur noch ein Schritt übrig ist, soll die Funktion eine einfache Kochkurve der Länge $l$ zeichnen.
+				\item
+				Ansonsten soll sie an den Stellen, an denen es geradeaus geht, stattdessen kleinere Kochkurven zeichnen. Die Anzahl an Schritten wird dabei um eins verkleinert.				
+			\end{itemize}
+			\item
+			Eine Schneeflocke besteht aus mehreren aneinandergereihten Kochkurven in der Form eines $n$-Ecks. Finde die Anzahl an Ecken heraus, für die die Schneeflocke am schönsten aussieht.
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsection{Aufgabe 6 ($5 + 5 + 15 + 15 + 5 + 10$ min)}
+	\begin{itemize}
+		\item 
+		Fibonacci-Kurve.
+		\item
+		Gemeinsam Definition von Fibonacci-Zahlen durchgehen und die ersten paar anzeigen lassen.
+		\item
+		\begin{enumerate}[(a)]
+			\item 
+			Schreibe eine Funktion, die ein Quadrat mit der Seitenlänge $l$ zeichnet.
+			\item
+			Schreibe eine Funktion, die das folgende Verhalten zeigt:
+			\begin{itemize}
+				\item 
+				Sie nimmt zwei Parameter entgegen: Die Anzahl $n$ und ein Länge $l$
+				\item
+				Solange noch Schritte übrig sind, soll die Funktion im $i$-ten Schritt ein Quadrat mit der Seitenlänge $l\cdot\mathsf{fib}(i)$ zeichnen.
+				\item
+				Die Quadrate sollen spiralförmig gegen den Uhrzeigersinn um den Startpunkt angeordnet sein.
+			\end{itemize}
+			\item
+			Zeichne die sogenannte Fibonacci-Kurve. Gehe dazu wie folgt vor:
+			\begin{itemize}
+				\item 
+				Ähnlich wie oben nimmt die Funktion @kurve@ die Parameter @n@ und @l@ an.
+				\item
+				Ein Kurvensegment besteht immer aus einem Viertelkreis. Ein solcher lässt sich mit @circle(r, 90)@ zeichnen, wobei @r@ der Radius des Kreises ist.
+				\item
+				Im Fall unserer Kurve ist der Radius des $i$-ten Kurvensegments genau die $i$-te Fibonacci-Zahl.
+			\end{itemize}
+			\item
+			Färbe die Quadrate bunt ein. Benutze dazu die Funktion @naechste_farbe@, die als Parameter den aktuellen Schritt annimmt. 
+			
+			Außerdem kannst du die Quadrate in der Funktion @quadrat(...)@ farbig ausfüllen. Benutze dazu die Turtle-Funktionen @begin_fill()@ und @end_fill()@.
+			
+			Denke daran, auch danach noch die Kurve einzufärben, damit man sie auf dem bunten Hintergrund noch erkennt.
+		\end{enumerate}
+	\end{itemize}
+
+	\subsection{Abschluss / Puffer ($10$ min)}
+	\begin{itemize}
+		\item 
+		Gegebenenfalls Kinder Bilder zeigen lassen.
+		\item
+		Verabschieden.
+	\end{itemize}
+
+	
+	
+\end{document}
