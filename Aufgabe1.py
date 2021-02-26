@@ -1,18 +1,12 @@
 
-import turtle
+from turtle import *
 
-def reset():
-    turtle.reset()
-    turtle.shape("turtle")
-    #turtle.speed(1)
-
-def go():
-    a()
-    reset()
-    b()
-
-    
 def a():
+    '''
+    Löse hier Aufgabe 1 (a).
+    Zeichne ein Quadrat mit der Seitenlänge 100.
+    '''
+
     turtle.forward(100)
     turtle.left(90)
 
@@ -47,26 +41,15 @@ def a():
 
 
 def b():
-    turtle.forward(100)
-    turtle.left(90)
+    '''
+    Löse hier Aufgabe 1 (b).
+    Zeichne ein gleichseitiges Dreieck.
+    '''
+    pass
 
-    turtle.forward(100)
-    turtle.left(135)
-
-    turtle.forward(141)
-    turtle.right(135)
-
-    turtle.forward(100)
-    turtle.right(90)
-
-    turtle.forward(100)
-    turtle.left(120)
-
-    turtle.forward(100)
-    turtle.left(120)
-
-    turtle.forward(100)
-    turtle.left(75)
-
-    turtle.forward(141)
-
+def c():
+    '''
+    Löse hier Aufgabe 1 (c).
+    Zeichne das Haus des Nikolaus mit den gerade gelernten Befehlen.
+    '''
+    pass

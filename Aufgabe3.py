@@ -1,38 +1,21 @@
 from turtle import *
+# Zeichne die Linien etwas dicker als normal.
+pensize(2)
 
-def reset():
-    shape("turtle")
-    speed(100)
-
+# Hier ist eine Liste mit sechs verschiedenen Farben für Aufgabe 3 (c).
 farben = ["red", "green", "blue", "yellow", "brown", "purple"]
+ 
 
+def hexagon(r):
+   '''
+   Löse hier Aufgabe 3 (a) und (c).
+   Zeichne ein Sechseck mit Radius r.
+   '''
+   pass
 
-def go():
-    reset()
-    pensize(2)
-    bgcolor("black")
-
-    for r in range(2, 150, 5):
-        hex(r)
-        right(10)
-
-
-
-
-def hex(r):
-    penup()
-    left(60)
-    forward(r)
-    right(120)
-    pendown()
-
-    for c in range(6):
-        color(farben[c])
-        forward(r)
-        right(60)
-
-    penup()
-    right(60)
-    forward(r)
-    left(120)
-    pendown()
+def magic_hex():   
+    '''    
+    Löse hier Aufgabe 3 (b).
+    '''
+    pass
+    
