@@ -1,22 +1,9 @@
 
 import turtle
-import Aufgabe1, Aufgabe2, Aufgabe3, Aufgabe4, Aufgabe5, Aufgabe6, Rekursion
+import Aufgabe1, Aufgabe2, Aufgabe3, Aufgabe4, Aufgabe5, Aufgabe6
 
-def reset():
-    turtle.reset()
-    turtle.shape("turtle")
-    #turtle.speed(1)
+turtle.reset()
+turtle.shape("turtle")
+turtle.speed(0.01)
 
-reset()
-
-def exec():
-    # Jede Aufgabe wird mit dem Befehl "go()" ausgeführt.
-    #Aufgabe1.go()
-    #Aufgabe2.go()
-    #Aufgabe3.go()
-    #Rekursion.go()
-    #Aufgabe4.go()
-    #Aufgabe5.go()
-    Aufgabe6.go()
-
-exec() 
+Aufgabe5.schneeflocke(80, 4, 3)
