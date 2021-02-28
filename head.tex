@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[9pt]{article}
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -10,6 +10,7 @@
 \usepackage{enumerate}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{float}
 \usepackage{mathtools}
 \usepackage{fontawesome}
 \usepackage{csquotes}
@@ -17,12 +18,34 @@
 \usepackage{tikz}
 \usepackage[margin = 2cm]{geometry}
 \usepackage{verbatim}
+\usepackage{hyperref}
 \usetikzlibrary{calc}
 
 
 
 \author{Niklas Schneider - Maximilian Krahn}
 \date{}
+
+\newcommand{\setFW}{
+	\lstset{ %this is the stype
+    mathescape=true,
+    %frame=tB,				
+    %numbers=left,
+    %numberstyle=\tiny,		
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\bf,
+    resetmargins=true,
+    language = python,
+    %xleftmargin=.04\textwidth,
+    numbersep=0pt,
+    tabsize=4
+}
+}
+\lstnewenvironment{code}
+{
+	\setFW
+}
+{}
 
 \lstMakeShortInline[
 mathescape=true,
