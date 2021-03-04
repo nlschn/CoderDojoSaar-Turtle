@@ -11,6 +11,3 @@ The `main` branch contains the exercise sheets as a pdf and LaTeX file as well a
 ![img 2](https://raw.githubusercontent.com/nlschn/CoderDojoSaar-Turtle/main/img/fib_color.png "What we also do in the course")
 
 ![img 3](https://raw.githubusercontent.com/nlschn/CoderDojoSaar-Turtle/main/img/snowflake.png "Really cool things!")
-
-
-The project is right now under construction and the full documentation will be added here later.
