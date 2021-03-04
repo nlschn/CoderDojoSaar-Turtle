@@ -6,4 +6,4 @@ reset()
 shape("turtle")
 speed(0.01)
 
-Aufgabe5.schneeflocke(100, 4, 3)
+Aufgabe6.zeichnen()

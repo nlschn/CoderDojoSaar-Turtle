@@ -1,7 +1,7 @@
 
 from turtle import *
 
-def a():
+def mk() -> None:
     '''
     Löse hier Aufgabe 2 (a).
     Zeichne die Buchstaben "MK" in bunt.
@@ -36,7 +36,7 @@ def a():
     right(90)
     forward(72)
   
-def b():
+def initialien() -> None:
     '''
     Löse hier Aufgabe 2 (b)
     Zeichne hier deine eigenen Initialien bunt.

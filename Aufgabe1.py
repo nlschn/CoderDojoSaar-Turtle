@@ -1,7 +1,7 @@
 
 from turtle import *
 
-def a():
+def quadrat():
     '''
     Löse hier Aufgabe 1 (a).
     Zeichne ein Quadrat mit der Seitenlänge 100.
@@ -40,14 +40,14 @@ def a():
     turtle.left(180)
 
 
-def b():
+def dreieck():
     '''
     Löse hier Aufgabe 1 (b).
     Zeichne ein gleichseitiges Dreieck.
     '''
     pass
 
-def c():
+def haus_des_nikolaus():
     '''
     Löse hier Aufgabe 1 (c).
     Zeichne das Haus des Nikolaus mit den gerade gelernten Befehlen.

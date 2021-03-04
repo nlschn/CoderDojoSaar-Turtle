@@ -6,14 +6,14 @@ pensize(2)
 farben = ["red", "green", "blue", "yellow", "brown", "purple"]
  
 
-def hexagon(r):
+def hexagon(r) -> None:
    '''
    Löse hier Aufgabe 3 (a) und (c).
    Zeichne ein Sechseck mit Radius r.
    '''
    pass
 
-def magic_hex():   
+def magic_hex() -> None:   
     '''    
     Löse hier Aufgabe 3 (b).
     '''

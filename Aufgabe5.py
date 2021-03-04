@@ -9,19 +9,15 @@ def koch_einfach(l : int) -> None:
     pass
 
 def koch_rek(l : int, n : int) -> None:
-    if n <= 1:
-        koch_einfach(l)
-        return
-
-    koch_rek(l / 3, n - 1)
-    left(60)
-    koch_rek(l / 3, n - 1)
-    right(120)
-    koch_rek(l / 3, n - 1)
-    left(60)
-    koch_rek(l / 3, n - 1)
+    '''
+    Löse hier Aufgabe 5 (b).
+    Wenn nur noch ein Schritt ̈ubrig ist, soll die Funktion eine einfache Kochkurve der L ̈angelzeichnen.
+    Ansonsten soll sie an den Stellen, an denen es geradeaus geht, stattdessen kleinere Kochkurven zeichnen. Die Anzahl an Schritten wird dabei um eins verkleinert.
+    '''
+    pass
 
 def schneeflocke(l : int, n : int, e : int)  -> None:
-    for i in range(e):
-        koch_rek(l, n)
-        right(360 / e)
+    '''
+    Zeichne ein n-Eck aus Kochkurven mit den gegebenen Parametern l und n.
+    '''
+    pass
